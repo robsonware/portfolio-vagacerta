@@ -1,0 +1,169 @@
+﻿<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Vaga Certa - Secretaria de Estado de Ciência, Tecnologia e Inovação, ligando você ao mercado de trabalho.">
+	<meta name="keywords" content="estágio, trainee, trabalho, emprego, entrevista, oportunidadade">
+
+	<meta name="csrf-token" content="XE023n2Pisu7fwx4eB9sUPjwezDEJ1qKXPjI5Yoa">
+
+	<link rel="apple-touch-icon" sizes="57x57" href="apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192" href="android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32-1.png">
+<link rel="icon" type="image/png" sizes="96x96" href="favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16-1.png">
+<link rel="manifest" href="manifest-1.json">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="http://localhost:8000/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+	<link rel="stylesheet" href="releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+	<link href="css/app-1.css" rel="stylesheet">
+	
+	<title>Vaga Certa</title>
+</head>
+
+<body class="bgc-1 is-unselectable">
+	<main class="container">
+	
+<section class="hero is-fullheight">
+    <div class="hero-body">
+        <div class="container has-text-centered">
+            <div class="column is-6 is-offset-3">
+                <h3 class="title has-text-grey">Cadastro</h3>
+                <p class="subtitle has-text-grey">Faça seu cadastro para entrar na plataforma.</p>
+
+                <div class="box">
+                    <i class="far fa-address-card big-icon"></i>
+
+                    <form method="post" id="registerForm">
+                        <div class="field">
+                            <div class="select is-large is-fullwidth">
+                                <select id="perfil" autofocus="" required="">
+                                    <option value="">Selecione um perfil...</option>
+                                                                        <option value="CANDIDATO">Candidato(a)</option>
+                                                                        <option value="EMPRESA">Empresa</option>
+                                                                    </select>
+                            </div>
+                        </div>
+
+                        <div class="field">
+                            <div class="control has-icons-left">
+                                <input id="nome" type="text" class="input is-large" placeholder="Nome completo" title="Digite seu nome completo" value="" autocomplete="name" required="">
+                                <span class="icon is-medium is-left">
+                                    <i class="fas fa-smile"></i>
+                                </span>
+                            </div>
+                        </div>
+
+                        <div class="field">
+                            <div class="control has-icons-left">
+								<input id="email" type="email" class="input is-large" placeholder="Email" title="Digite seu email (deve ser um email válido que você possa acessar)" value="" autocomplete="email" required="">
+                                <span class="icon is-medium is-left">
+                                    <i class="fas fa-envelope"></i>
+                                </span>
+                            </div>
+                        </div>
+
+                        <div class="field">
+                            <div class="control has-icons-left">
+                                <input id="cpf" name="cpf" type="tel" pattern="[0-9]*" maxlength="11" placeholder="CPF (apenas números)" class="input is-large" autocomplete="cpf" required="">
+                                <span class="icon is-medium is-left">
+                                    <i class="fas fa-id-card"></i>
+                                </span>
+                            </div>
+                        </div>
+
+                        <div class="field">
+                            <div class="control has-icons-left">
+                                <input id="nascimento" name="nascimento" type="text" value="" class="input is-large" placeholder="Dt. Nasc. (DD/MM/YYYY)" maxlength="10" autocomplete="bday" pattern="\d{1,2}/\d{1,2}/\d{4}" required="">
+                                <span class="icon is-medium is-left">
+                                    <i class="fas fa-birthday-cake"></i>
+                                </span>
+                            </div>
+                        </div>
+
+						<div class="field">
+                            <div class="control has-icons-left">
+								<input id="senha" type="password" class="input" placeholder="Senha" title="Crie uma senha de sua preferência (só não vale 123456 ou parecida)" autocomplete="new-password" required="">
+                                <span class="icon is-medium is-left">
+                                    <i class="fas fa-asterisk"></i>
+                                </span>
+                            </div>
+                        </div>
+
+						<div class="field">
+                            <div class="control has-icons-left">
+								<input id="confirmacao_senha" type="password" class="input" placeholder="Confirme a senha" title="Digite novamente a senha que você criou acima" autocomplete="password_confirmation" required="">
+                                <span class="icon is-medium is-left">
+                                    <i class="fas fa-asterisk"></i>
+                                </span>
+                            </div>
+                        </div>
+
+                        <hr>
+
+						<div class="columns is-mobile">
+                            <div class="column">
+                                <p class="control">
+                                    <a href="index-1.htm" class="button is-link is-medium is-outlined is-info is-fullwidth" title="Voltar para login"><i class="fas fa-chevron-left"></i></a>
+                                </p>
+                            </div>
+                            <div class="column is-8">
+                                <p class="control">
+                                    <button class="button is-primary is-medium is-fullwidth" type="submit" id="btCadastrar">Cadastrar</button>
+                                </p>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+                <br>
+
+                <p class="has-text-grey">
+					<a href="index-1.htm" title="Página inicial">Início</a>
+                    <i class="far fa-question-circle"></i>
+					<a href="suporte.html" title="Fazer login">Dúvidas</a>
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="modal">
+    <div class="modal-background"></div>
+    <div class="modal-content">
+        <div class="box notificacao">
+            <article class="media">
+                <div class="media-left">
+                    <i class="fas fa-bell fa-3x"></i>
+                </div>
+                <div class="media-content">
+                    <div class="content">
+                        <p>
+                            <strong>Notificação</strong> | <small>15081317</small> &middot; <small class="req-status"></small>
+                            <br>
+                            <span class="mensagem"></span>
+                        </p>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </div>
+    <button class="modal-close is-large" aria-label="close"></button>
+</div>
+
+	</main>
+
+	<script src="js/app.js" defer=""></script>
+</body>
+</html>
